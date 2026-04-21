@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(226, 225, 219);
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    animation: headShake 1.4s infinite;
+}
+
+section h2 {
+    transition: 0.5s;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+section h2:hover {
+    color: yellow;
+}
+
+.logo {
+    width: 90px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+header input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.hero .info {
+    padding: 20px;
+}
+
+.info {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.info p {
+    color: #2c3e50;
+}
+
+/* FOODS */
+.foods {
+    padding: 20px;
+    background: #ecf0f1;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px;
+
+    gap: 40px;
+}
+
+.card {
+    transition: 0.9s;
+    flex-wrap: wrap;
+    width: 350px;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 0 40px yellow;
+}
+
+/* ABOUT */
+.about {
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-div {
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+footer p {
+    margin-top: 90px;
+}
+
+div img {
+    flex-wrap: wrap;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+div img:hover {
+    filter: brightness(70%);
+}
+
+div h2 {
+    padding-top: 20px;
+}
+
+div button {
+    width: 65px;
+    height: 39px;
+    background-color: rgb(240, 240, 16);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+div button:active {
+    transform: scale(0.9);
+}
+
+div button:hover {
+    box-shadow: 0 0 30px yellow;
+}
